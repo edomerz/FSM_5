@@ -30,15 +30,15 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity FSM_4 is
-	Port ( r_in			: in  STD_LOGIC;   --P41_i  LOC = "P41" #        : r_in in
-		   c_in  		: in  STD_LOGIC;   --P42_i  LOC = "P42" #        : c_in in
-           clk 			: in  STD_LOGIC;   --P01_i  LOC = "P1"  # J1-3   : GCK = XTAL 50M OUT
-           reset  		: in  STD_LOGIC;   --P40_i  LOC = "40"  # J1-34  : input reset
-					run_out 		: out STD_LOGIC;    	--P30_o  LOC = "P30" # J1-27  : LED5
-					Sync_out  		: out STD_LOGIC;   		--P31_o  LOC = "P31" #        : LED4
-					P0_out  		: out STD_LOGIC;   		--P32_o  LOC = "P32" #        : LED3
-					P1_out    		: out STD_LOGIC;  		--P33_o  LOC = "P33" #        : LED2
-					Erase_out		: out STD_LOGIC); 		--P34_o  LOC = "P34" #        : !!!!!!!!need to add in ucf!!!!!!!
+	Port (  r_in		: in  STD_LOGIC;   --P41_i  LOC = "P41" #        : r_in in
+		c_in  		: in  STD_LOGIC;   --P42_i  LOC = "P42" #        : c_in in
+        	clk 		: in  STD_LOGIC;   --P01_i  LOC = "P1"  # J1-3   : GCK = XTAL 50M OUT
+        	reset  		: in  STD_LOGIC;   --P40_i  LOC = "40"  # J1-34  : input reset
+			run_out 		: out STD_LOGIC;    	--P30_o  LOC = "P30" # J1-27  : LED5
+			Sync_out  		: out STD_LOGIC;   	--P31_o  LOC = "P31" #        : LED4
+			P0_out  		: out STD_LOGIC;   	--P32_o  LOC = "P32" #        : LED3
+			P1_out    		: out STD_LOGIC;  	--P33_o  LOC = "P33" #        : LED2
+			Erase_out		: out STD_LOGIC); 	--P34_o  LOC = "P34" #        : !!!!!!!!need to add in ucf!!!!!!!
 end FSM_4;
 
 architecture Behavioral of FSM_4 is
